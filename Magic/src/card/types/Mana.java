@@ -9,10 +9,11 @@ public abstract class Mana extends BaseCard{
 	private boolean isTapped = false;
 	
 	public Mana(String type){
+		super(null, type); //Mana costs nothing to bring in 
 		this.type = type; 
 	}
 	
-	public void tap() throws CardAlreadyTappedException{
+	public void addToManaPool() throws CardAlreadyTappedException{
 		if(!isTapped){
 			isTapped = true; 
 		}else{

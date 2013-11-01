@@ -2,9 +2,21 @@ package card.types;
 
 import java.util.HashMap;
 
-public class BaseCard {
+public abstract class BaseCard {
 
-	private final HashMap<String, Integer> cost = new HashMap<String, Integer>();
+	private final HashMap<String, Integer> manaCost;
+	private final String cardText; 
 	
+	public BaseCard(HashMap<String, Integer> costMap, String text) {
+		this.manaCost = costMap;
+		this.cardText = text;
+	}
 	
+	public HashMap<String, Integer> getManaCost() {
+		return this.manaCost; 
+	}
+	
+	public String getCardText() {
+		return this.cardText;
+	}
 }
