@@ -1,9 +1,9 @@
 package card.types;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import exceptions.CardAlreadyTappedException;
+import game.elements.ManaCost;
 
 public class Creature extends BaseCard{
 
@@ -14,13 +14,13 @@ public class Creature extends BaseCard{
 	private boolean hasFlying = false;
 	private boolean hasTrample = false; 
 	
-	public Creature(HashMap<String, Integer> costObj, String creatText, int creatPow, int creatTough){
+	public Creature(ManaCost costObj, String creatText, int creatPow, int creatTough){
 		super(costObj, creatText);
 		this.power = creatPow;
 		this.toughness = creatTough;
 	}
 	
-	public Creature(HashMap<String, Integer> costObj, String creatText, int creatPow, int creatTough, ArrayList<String> specials){
+	public Creature(ManaCost costObj, String creatText, int creatPow, int creatTough, ArrayList<String> specials){
 		super(costObj, creatText);
 		this.power = creatPow;
 		this.toughness = creatTough;

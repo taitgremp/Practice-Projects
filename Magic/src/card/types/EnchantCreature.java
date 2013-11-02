@@ -1,10 +1,11 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
+
 
 public class EnchantCreature extends Enchantment{
 	
-	public EnchantCreature(HashMap<String, Integer> cost, String text){
+	public EnchantCreature(ManaCost cost, String text){
 		super(cost, text);
 	}
 

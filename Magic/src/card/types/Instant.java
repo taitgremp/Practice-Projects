@@ -1,10 +1,10 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
 
 public class Instant extends BaseCard {
 	
-	public Instant(HashMap<String, Integer> costObj, String instantText){
+	public Instant(ManaCost costObj, String instantText){
 		super(costObj, instantText);
 	}
 

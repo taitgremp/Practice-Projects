@@ -1,10 +1,10 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
 
 public class Sorcery extends BaseCard {
 	
-	public Sorcery(HashMap<String, Integer> costObj, String sorceryText){
+	public Sorcery(ManaCost costObj, String sorceryText){
 		super(costObj, sorceryText);
 	}
 

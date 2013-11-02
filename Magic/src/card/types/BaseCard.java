@@ -1,18 +1,18 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
 
 public abstract class BaseCard {
 
-	private final HashMap<String, Integer> manaCost;
+	private final ManaCost manaCost;
 	private final String cardText; 
 	
-	public BaseCard(HashMap<String, Integer> costMap, String text) {
+	public BaseCard(ManaCost costMap, String text) {
 		this.manaCost = costMap;
 		this.cardText = text;
 	}
 	
-	public HashMap<String, Integer> getManaCost() {
+	public ManaCost getManaCost() {
 		return this.manaCost; 
 	}
 	

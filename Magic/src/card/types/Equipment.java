@@ -1,16 +1,16 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
 
 public class Equipment extends Artifact{
 	
 	private boolean isEquipped = false;
 	
-	public Equipment(HashMap<String, Integer> cost, String text){
+	public Equipment(ManaCost cost, String text){
 		super(cost, text);
 	}
 	
-	public Equipment(HashMap<String, Integer> cost, String text, boolean equipped){
+	public Equipment(ManaCost cost, String text, boolean equipped){
 		super(cost, text);
 		this.isEquipped = equipped;
 	}

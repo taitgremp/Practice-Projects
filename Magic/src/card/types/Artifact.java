@@ -1,10 +1,11 @@
 package card.types;
 
-import java.util.HashMap;
+import game.elements.ManaCost;
+
 
 public class Artifact extends BaseCard{
 	
-	public Artifact(HashMap<String, Integer> cost, String text){
+	public Artifact(ManaCost cost, String text){
 		super(cost, text);
 	}
 	
