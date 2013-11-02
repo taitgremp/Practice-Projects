@@ -3,7 +3,7 @@ package card.types;
 import exceptions.CardAlreadyTappedException;
 import exceptions.CardNotTappedException;
 
-public abstract class Mana extends BaseCard{
+public class Mana extends BaseCard{
 	
 	private final String type;
 	private boolean isTapped = false;
